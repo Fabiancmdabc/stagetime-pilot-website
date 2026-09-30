@@ -8,14 +8,13 @@ import {
   type ReactNode,
 } from "react";
 
-/** Bild bewegt sich langsamer als der Scroll — leichter Parallax. */
+/** Bild bewegt sich langsamer als Text — ohne seitliches Abschneiden. */
 export function ParallaxMedia({
   children,
-  speed = 0.28,
+  speed = 0.22,
   className = "",
 }: {
   children: ReactNode;
-  /** 0 = klebt, 0.5 = halb so schnell wie Scroll */
   speed?: number;
   className?: string;
 }) {
@@ -30,7 +29,7 @@ export function ParallaxMedia({
       const rect = el.getBoundingClientRect();
       const vh = window.innerHeight || 1;
       const progress = (vh / 2 - (rect.top + rect.height / 2)) / vh;
-      setOffset(progress * speed * 120);
+      setOffset(progress * speed * 80);
     };
     const onScroll = () => {
       cancelAnimationFrame(frame);
@@ -52,10 +51,8 @@ export function ParallaxMedia({
   };
 
   return (
-    <div ref={ref} className={`overflow-hidden ${className}`}>
-      <div style={style} className="scale-[1.12]">
-        {children}
-      </div>
+    <div ref={ref} className={className}>
+      <div style={style}>{children}</div>
     </div>
   );
 }

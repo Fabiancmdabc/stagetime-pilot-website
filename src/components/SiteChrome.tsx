@@ -1,16 +1,32 @@
 import Link from "next/link";
 
+function BrandLogo({
+  variant = "nav",
+  priority = false,
+}: {
+  variant?: "nav" | "hero";
+  priority?: boolean;
+}) {
+  return (
+    // eslint-disable-next-line @next/next/no-img-element
+    <img
+      src="/Logo-StageTime-Pilot.png"
+      alt="StageTime-Pilot"
+      width={1774}
+      height={887}
+      className={`brand-logo ${variant === "hero" ? "is-hero" : "is-nav"}`}
+      decoding="async"
+      {...(priority ? { fetchPriority: "high" as const } : {})}
+    />
+  );
+}
+
 export function SiteHeader() {
   return (
     <header className="sticky top-0 z-40 border-b border-line bg-bg0/80 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
-        <Link href="/" className="flex items-center gap-3">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/Logo-StageTime-Pilot.png"
-            alt="StageTime-Pilot"
-            className="h-10 w-auto rounded-md bg-[#f4f6f8] px-2 py-1"
-          />
+        <Link href="/" className="flex shrink-0 items-center self-center">
+          <BrandLogo variant="nav" />
         </Link>
         <nav className="flex items-center gap-4 text-sm">
           <Link href="/#remote" className="hidden text-muted hover:text-ink sm:inline">
@@ -56,3 +72,5 @@ export function SiteFooter() {
     </footer>
   );
 }
+
+export { BrandLogo };
