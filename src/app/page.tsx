@@ -249,7 +249,7 @@ export default function HomePage() {
               Bereit für die nächste Redezeit?
             </h2>
             <p className="mt-4 max-w-xl text-muted">
-              Kostenlos. Kein Abo. macOS jetzt laden — Windows folgt.
+              Kostenlos. Kein Abo. macOS und Windows zum Download.
             </p>
             <Link
               href="/download"
