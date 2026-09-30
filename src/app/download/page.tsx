@@ -36,13 +36,16 @@ export default function DownloadPage() {
         </div>
         <div className="rounded-xl border border-line bg-bg1 p-5">
           <h2 className="font-semibold text-ink">Windows</h2>
-          <p className="mt-2 text-sm text-muted">NSIS-Installer (.exe).</p>
+          <p className="mt-2 text-sm text-muted">
+            NSIS-Installer (.exe) für Windows 10/11, 64-bit. Windows SmartScreen
+            kann beim ersten Start warnen (noch nicht code-signiert).
+          </p>
           {releases.win ? (
             <a
               href={releases.win}
               className="mt-5 inline-flex rounded-full bg-amber px-4 py-2 text-sm font-bold text-bg0 hover:brightness-110"
             >
-              Windows laden
+              Windows laden (.exe)
             </a>
           ) : (
             <p className="mt-5 text-sm text-muted">

@@ -6,9 +6,9 @@ export const releases = {
   version: "1.0.0",
   releasedAt: "2026-09-30",
   notes:
-    "Erste öffentliche Version: Redezeit, Show/PGM, Chroma-Key, NDI/RTMP/UDP, Remote.",
+    "Erste öffentliche Version: Redezeit, Show/PGM, Chroma-Key, NDI/RTMP/UDP, Remote. macOS + Windows.",
   /** Absolute Download-URLs (GitHub Releases — zu groß für Vercel) */
   mac: `${GITHUB_RELEASE}/StageTime-Pilot-1.0.0-arm64.dmg`,
-  win: "" as string,
+  win: `${GITHUB_RELEASE}/StageTime-Pilot-1.0.0-Setup.exe`,
   updateUrl: "/api/version",
 } as const;
