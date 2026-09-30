@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+:root {
+  --bg0: #0f1216;
+  --bg1: #171b22;
+  --bg2: #1e242e;
+  --line: rgba(255, 255, 255, 0.1);
+  --text: #e8eef2;
+  --muted: #8b97a5;
+  --teal: #2ec4b6;
+  --orange: #ff7a3c;
+  --ink: #ffffff;
+}
+
+@theme inline {
+  --color-bg0: var(--bg0);
+  --color-bg1: var(--bg1);
+  --color-bg2: var(--bg2);
+  --color-line: var(--line);
+  --color-text: var(--text);
+  --color-muted: var(--muted);
+  --color-teal: var(--teal);
+  --color-orange: var(--orange);
+  --color-ink: var(--ink);
+  --font-sans: var(--font-geist-sans);
+  --font-display: var(--font-display);
+}
+
+body {
+  color: var(--text);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  background:
+    radial-gradient(900px 500px at 10% -10%, rgba(46, 196, 182, 0.16), transparent 55%),
+    radial-gradient(700px 420px at 100% 0%, rgba(255, 122, 60, 0.12), transparent 50%),
+    var(--bg0);
+  min-height: 100vh;
+}
+
+::selection {
+  background: rgba(46, 196, 182, 0.35);
+  color: #fff;
+}
