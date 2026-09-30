@@ -26,7 +26,7 @@ export default function DownloadPage() {
           {releases.mac ? (
             <a
               href={releases.mac}
-              className="mt-5 inline-flex rounded-lg bg-teal px-4 py-2 text-sm font-semibold text-black hover:brightness-110"
+              className="mt-5 inline-flex rounded-full bg-amber px-4 py-2 text-sm font-bold text-bg0 hover:brightness-110"
             >
               macOS laden (.dmg)
             </a>
@@ -40,7 +40,7 @@ export default function DownloadPage() {
           {releases.win ? (
             <a
               href={releases.win}
-              className="mt-5 inline-flex rounded-lg bg-teal px-4 py-2 text-sm font-semibold text-black hover:brightness-110"
+              className="mt-5 inline-flex rounded-full bg-amber px-4 py-2 text-sm font-bold text-bg0 hover:brightness-110"
             >
               Windows laden
             </a>
@@ -59,7 +59,7 @@ export default function DownloadPage() {
       ) : null}
 
       <p className="mt-6 text-sm text-muted">
-        <Link href="/" className="text-teal hover:underline">
+        <Link href="/" className="text-amber hover:underline">
           Zurück zur Startseite
         </Link>
       </p>

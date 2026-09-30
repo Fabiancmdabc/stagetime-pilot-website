@@ -1,17 +1,17 @@
 import type { Metadata } from "next";
-import { Geist, Syne } from "next/font/google";
+import { Figtree, Outfit } from "next/font/google";
 import { SiteFooter, SiteHeader } from "../components/SiteChrome";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const body = Figtree({
+  variable: "--font-body",
   subsets: ["latin"],
 });
 
-const syne = Syne({
+const display = Outfit({
   variable: "--font-display",
   subsets: ["latin"],
-  weight: ["500", "600", "700"],
+  weight: ["500", "600", "700", "800"],
 });
 
 export const metadata: Metadata = {
@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="de">
       <body
-        className={`${geistSans.variable} ${syne.variable} flex min-h-screen flex-col antialiased`}
+        className={`${body.variable} ${display.variable} flex min-h-screen flex-col antialiased`}
       >
         <SiteHeader />
         <main className="flex-1">{children}</main>
