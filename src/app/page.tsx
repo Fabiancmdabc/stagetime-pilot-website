@@ -6,6 +6,7 @@ import { ParallaxMedia } from "../components/ParallaxMedia";
 import { RemoteDeviceShowcase } from "../components/RemoteDeviceShowcase";
 import { Reveal } from "../components/Reveal";
 import { BrandLogo } from "../components/SiteChrome";
+import { EcosystemStrip } from "../components/EcosystemStrip";
 
 export const metadata: Metadata = {
   title: "StageTime-Pilot — Redezeit. Klar. Bühne.",
@@ -194,6 +195,8 @@ export default function HomePage() {
           </article>
         </div>
       </section>
+
+      <EcosystemStrip />
 
       <section className="border-b border-line bg-bg1/30">
         <div className="mx-auto max-w-6xl px-5 py-16 sm:px-8 sm:py-20">
