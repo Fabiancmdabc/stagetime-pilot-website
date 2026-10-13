@@ -53,12 +53,10 @@ export default function DownloadPage() {
       </div>
 
       <div className="mt-10 rounded-xl border border-line bg-bg1/80 p-5">
-        <h2 className="font-semibold text-ink">Hinweis zu macOS-Sicherheit</h2>
+        <h2 className="font-semibold text-ink">macOS-Sicherheit</h2>
         <p className="mt-2 text-sm leading-relaxed text-muted">
-          Die öffentliche macOS-Version wird als Nächstes mit einem Apple
-          Developer ID signiert und notarisiert, damit sie sich ohne Extra-Schritte
-          öffnen lässt. Bis dahin kann Gatekeeper den ersten Start noch blockieren —
-          das ist ein Zertifikats-Thema, keine defekte Datei.
+          Der aktuelle macOS-Build ist mit Developer ID signiert und von Apple
+          notarisiert — Gatekeeper sollte den Start ohne Extra-Schritte erlauben.
         </p>
       </div>
 
