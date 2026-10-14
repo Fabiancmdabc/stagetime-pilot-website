@@ -6,7 +6,7 @@ export const releases = {
   version: "1.0.3",
   releasedAt: "2026-10-14",
   notes:
-    "1.0.3: Update-Banner, klareres Icon, Fenster-Chrome/Outputs-Fixes, Nachrichten-Blink & Zeichencrlimit.",
+    "1.0.3: Update-Banner, klareres Icon, Fenster-Chrome/Outputs-Fixes, Nachrichten-Blink & Zeichenlimit.",
   mac: `${GITHUB_RELEASE}/StageTime-Pilot-1.0.3-arm64.dmg`,
   win: "https://github.com/Fabiancmdabc/StageTime-Pilot/releases/download/v1.0.3/StageTime-Pilot-1.0.3-Setup.exe",
   updateUrl: "/api/version",
