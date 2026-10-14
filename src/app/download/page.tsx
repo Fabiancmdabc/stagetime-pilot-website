@@ -20,8 +20,8 @@ export default function DownloadPage() {
         <div className="rounded-xl border border-line bg-bg1 p-5">
           <h2 className="font-semibold text-ink">macOS</h2>
           <p className="mt-2 text-sm text-muted">
-            DMG für Apple Silicon (M1–M4). Download ca. 90&nbsp;MB, installiert
-            ca. 250&nbsp;MB.
+            DMG für Apple Silicon (M1–M4), ca. 90&nbsp;MB. Signiert und
+            notarisiert.
           </p>
           {releases.mac ? (
             <a
@@ -50,14 +50,6 @@ export default function DownloadPage() {
             <p className="mt-5 text-sm text-muted">Windows-Installer folgt.</p>
           )}
         </div>
-      </div>
-
-      <div className="mt-10 rounded-xl border border-line bg-bg1/80 p-5">
-        <h2 className="font-semibold text-ink">macOS-Sicherheit</h2>
-        <p className="mt-2 text-sm leading-relaxed text-muted">
-          Der aktuelle macOS-Build ist mit Developer ID signiert und von Apple
-          notarisiert — Gatekeeper sollte den Start ohne Extra-Schritte erlauben.
-        </p>
       </div>
 
       {releases.notes ? (
